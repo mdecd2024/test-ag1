@@ -4,15 +4,21 @@
 <p>簡報: <a href="https://mdecd2024.github.io/test-ag1/reveal">https://mdecd2024.github.io/test-ag1/reveal</a> </p>
 <p>倉儲: <a href="https://github.com/mdecd2024/test-ag1">https://github.com/mdecd2024/test-ag1</a> </p>
 <h1>Edit_on_Replit</h1>
+<p>針對擁有管理授權的 Github Classroom 倉儲, 如何利用 Replit 進行維護.</p>
+<p>設法在 Replit 帳號下, 利用 ssh-keygen 指令建立 .ssh 目錄下的 id_rsa 與 id_rsa.pub, 將 id_rsa.pub 送到 Github 帳號後, 此 id_rsa 私鑰即具有將此 Replit 帳號推向 Github 的權限.</p>
+<p>只是使用者必須設法利用 vi 自行建立 .ssh/config, 並且將 config 中所宣告的 Host 名稱, 以 SSH 協定格式, 修改倉儲 .git 目錄中的 config 連線設定.</p>
 <p>cd ..</p>
 <p>ssh-keygen</p>
 <p>cp id_rsa.pub ./../test-ag1</p>
 <p>cp id_rsa.pub to Github</p>
 <p>vi config</p>
-<p>Host github.com</p>
-<p>User git</p>
-<p>Hostname github.com</p>
 <p></p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">Host github.com
+
+User git
+
+Hostname github.com</pre>
+<p><br/>修改倉儲 .git 目錄中的 config, 以 SSH 對 Github 連線</p>
 <p></p><h1>cmsimde</h1>
 <p><span style="background-color: #ccffcc;">SMap</span> - SiteMap - 依照階次列出網站的所有頁面.</p>
 <p><span style="background-color: #ccffcc;">EditA</span> - Edit All page - 將所有頁面放入編輯模式中, 主要用來處理頁面搬遷, 刪除或決定衝突頁面內容版本.</p>
