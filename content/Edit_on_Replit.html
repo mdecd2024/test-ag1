@@ -1,6 +1,6 @@
 <!DOCTYPE html><html>
         <head>
-        <title>cmsimde_site</title>
+        <title>test-ag1</title>
         <meta charset="utf-8">
 <meta property="head" content="H1">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -161,7 +161,15 @@ Hostname github.com</pre>
 <hr/>
 <p>至於各協同設計學員從 Github Classsroom 所取得的分組倉儲, 由於在設定時已經賦予各組員管理權限, 因此在 localhost, 只要透過 puttygen 建立公私鑰, 並設定連線 session, 並且將此 session, 放入分組倉儲的 .git/config 設定檔案中, 以 SSH 協定將改版資料送到 Github 即可.</p>
 <p>只不過 putty 中所設定的 session 資料會綁定到電腦的 registry, 使用者更換電腦的過程, 必須自行以 USB 儲存設定, 並在啟動可攜環境時, 將先前的 putty 設定導入, 否則每次使用不同的電腦, 都必須重新設定 SSH 所需的 session.</p>
-<br />About << <a href='About.html'>Previous</a> <a href='41123199.html'>Next</a> >> 41123199</div>
+<hr/>
+<p>ssh.py</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import os
+if not os.path.exists("/home/runner/.ssh"): 
+    os.makedirs("/home/runner/.ssh") 
+os.system("mv ./downloads/id_rsa.txt /home/runner/.ssh/id_rsa")
+os.system("mv ./downloads/config.txt /home/runner/.ssh/config")
+os.system("chmod og-rwx /home/runner/.ssh/id_rsa")</pre>
+<p></p><br />About << <a href='About.html'>Previous</a> <a href='41123199.html'>Next</a> >> 41123199</div>
 
     <!-- footer -->
       <div class="container">
