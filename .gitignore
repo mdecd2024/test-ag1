@@ -3,4 +3,6 @@ __pycache__/
 # for Replit, do not use the embedded venv Python
 venv/
 config/config
+.replit
+replit.nix
 
