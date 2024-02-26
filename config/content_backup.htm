@@ -35,7 +35,18 @@ os.system("chmod og-rwx /home/runner/.ssh/id_rsa")</pre>
 <p><a href="https://mdecd2024.github.io/test-ag1/41123199">https://mdecd2024.github.io/test-ag1/41123199</a> 連結中擷取</p>
 <p>各倉儲的 .ssh 屬性各自獨立, 因為每一個 Replit 中的 Repl 專案都是獨立個體.</p>
 <p>設定以 SSH 協定將改版資料推向 Github 後, 必須先從 Shell 執行 git push, 確定要使用 id_rsa 取得授權之後, 才能再透過 git 執行隨後的 push.</p><h1>Edit_on_Codespaces</h1>
-<h1>platform</h1>
+<p>測試將 Github Classroom 設定的 test-ag1 分組網站放入 Github Codespaces 環境進行設定並執行動態網站</p>
+<p>分組網站在 Github Codespaces 的使用步驟:</p>
+<ol>
+<li>將分組網站導入 github.com/codespaces</li>
+<li>在終端機以 chmod u+x init_replit 將 init_replit 指令檔案設為 user 可以執行 (execute)</li>
+<li>在終端機以 ./init_replit 執行設定, 其實就是在虛擬環境中安裝執行動態編輯網站所需要的 Python 模組</li>
+<li>模組安裝後, 同樣在終端機以 python3 main.py 測試是否能夠正確啟用動態網站</li>
+<li>若動態網站已經可以執行, 就可以在終端機以 python3 main.py&amp; 另動態編輯網站在 background 執行</li>
+<li>將動態編輯網站開在瀏覽器頁面, 就可以利用密碼 admin 登入進行編輯</li>
+</ol>
+<p>在 Codespaces 相較於 Replit 的好處, Github Classroom 對分組倉儲所設定的管理權限, 可以直接套用到組員帳號下, 無需進行任何設定, 但是在 Replit 則必須在每次登入 Replit 的階段重新對 /home/runner/.ssh 中的 private key 以及 config 檔案進行設定.</p>
+<p>因此, 在運用 Github Pages 與 Github Classroom 的情況下, 使用 Codespaces 雲端環境較為便捷.</p><h1>platform</h1>
 <p>鋼球平衡台的零組件繪圖分別由:</p>
 <p>41123199 學員繪製 parts: <a href="https://mdecd2024.github.io/test-ag1/41123199/parts">https://mdecd2024.github.io/test-ag1/41123199/parts</a> </p>
 <p>這裡也可以直接引用 41123199 學員 cd2024 倉儲中的圖片或其他檔案資料</p>
