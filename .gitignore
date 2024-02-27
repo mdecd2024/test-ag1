@@ -5,4 +5,9 @@ venv/
 config/config
 .replit
 replit.nix
+.aux
+.lof
+.log
+.out
+.toc
 
