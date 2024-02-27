@@ -162,6 +162,9 @@ Hostname github.com</pre>
 <p>至於各協同設計學員從 Github Classsroom 所取得的分組倉儲, 由於在設定時已經賦予各組員管理權限, 因此在 localhost, 只要透過 puttygen 建立公私鑰, 並設定連線 session, 並且將此 session, 放入分組倉儲的 .git/config 設定檔案中, 以 SSH 協定將改版資料送到 Github 即可.</p>
 <p>只不過 putty 中所設定的 session 資料會綁定到電腦的 registry, 使用者更換電腦的過程, 必須自行以 USB 儲存設定, 並在啟動可攜環境時, 將先前的 putty 設定導入, 否則每次使用不同的電腦, 都必須重新設定 SSH 所需的 session.</p>
 <hr/>
+<p>另外, Replit 提供給<a href="https://replit.com/pricing">免費帳號的運算資源</a>較 Codespaces 少. 但僅限制單一帳號總容量 10GB, 似乎沒有總使用運算容量的限制(?)</p>
+<p>若要在 Replit 中使用從 Github Classroom 取下的倉儲, 則必須以程式方法在每次不同電腦開啟 Repl 的時候, 自行配置 /home/runner/.ssh 中的 id_rsa 與 config 設定檔案.</p>
+<p>此過程可以透過可攜環境中的 Puttygen 與動態網站資料上傳 id_rsa.txt 與 config.txt, 並在 Replit shell 中執行 python3 ssh.py 完成設定.</p>
 <p>ssh.py</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import os
 if not os.path.exists("/home/runner/.ssh"): 

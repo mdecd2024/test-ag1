@@ -23,6 +23,8 @@ Hostname github.com</pre>
 <p>至於各協同設計學員從 Github Classsroom 所取得的分組倉儲, 由於在設定時已經賦予各組員管理權限, 因此在 localhost, 只要透過 puttygen 建立公私鑰, 並設定連線 session, 並且將此 session, 放入分組倉儲的 .git/config 設定檔案中, 以 SSH 協定將改版資料送到 Github 即可.</p>
 <p>只不過 putty 中所設定的 session 資料會綁定到電腦的 registry, 使用者更換電腦的過程, 必須自行以 USB 儲存設定, 並在啟動可攜環境時, 將先前的 putty 設定導入, 否則每次使用不同的電腦, 都必須重新設定 SSH 所需的 session.</p>
 <hr/>
+<p>另外, Replit 提供給<a href="https://replit.com/pricing">免費帳號的運算資源</a>較 Codespaces 少. 但僅限制單一帳號總容量 10GB, 似乎沒有總使用運算容量的限制(?)</p>
+<p>若要在 Replit 中使用從 Github Classroom 取下的倉儲, 則必須以程式方法在每次不同電腦開啟 Repl 的時候, 自行配置 /home/runner/.ssh 中的 id_rsa 與 config 設定檔案.</p>
 <p>ssh.py</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import os
 if not os.path.exists("/home/runner/.ssh"): 
@@ -35,19 +37,24 @@ os.system("chmod og-rwx /home/runner/.ssh/id_rsa")</pre>
 <p><a href="https://mdecd2024.github.io/test-ag1/41123199">https://mdecd2024.github.io/test-ag1/41123199</a> 連結中擷取</p>
 <p>各倉儲的 .ssh 屬性各自獨立, 因為每一個 Replit 中的 Repl 專案都是獨立個體.</p>
 <p>設定以 SSH 協定將改版資料推向 Github 後, 必須先從 Shell 執行 git push, 確定要使用 id_rsa 取得授權之後, 才能再透過 git 執行隨後的 push.</p><h1>Edit_on_Codespaces</h1>
-<p>測試將 Github Classroom 設定的 test-ag1 分組網站放入 Github Codespaces 環境進行設定並執行動態網站</p>
+<p>將 Github Classroom 設定的 test-ag1 分組網站放入 Github Codespaces 環境進行設定並執行動態網站</p>
 <p>分組網站在 Github Codespaces 的使用步驟:</p>
 <ol>
-<li>將分組網站導入 github.com/codespaces</li>
+<li>將分組網站導入 github.com/codespaces (可以在倉儲上方 Code 按鈕中帶出綠色 Code 區域的 Codespaces 新增或啟動與倉儲對應的網際整合開發環境)</li>
 <li>在終端機以 chmod u+x init_replit 將 init_replit 指令檔案設為 user 可以執行 (execute)</li>
 <li>在終端機以 ./init_replit 執行設定, 其實就是在虛擬環境中安裝執行動態編輯網站所需要的 Python 模組</li>
-<li>模組安裝後, 同樣在終端機以 python3 main.py 測試是否能夠正確啟用動態網站</li>
-<li>若動態網站已經可以執行, 就可以在終端機以 python3 main.py&amp; 另動態編輯網站在 background 執行</li>
+<li>模組安裝後, 同樣在終端機以 python3 main.py 查看是否能執行動態編輯網站</li>
+<li>若動態網站已經可以執行, 就可以在終端機以 python3 main.py&amp; 令動態編輯網站在 background 執行</li>
 <li>將動態編輯網站開在瀏覽器頁面, 就可以利用密碼 admin 登入進行編輯</li>
+<li>由於 Codespaces 允許使用者開啟多連接埠, 因此除了執行動態網站, 也可以利用 python3 -m http.server 執行靜態網站, 若要在一個終端機頁面同時執行動態與靜態, 可以兩者都令其在 background 執行, 或者從表單的終端機功能中新增多個終端機頁面.</li>
 </ol>
-<p>在 Codespaces 相較於 Replit 的好處, Github Classroom 對分組倉儲所設定的管理權限, 可以直接套用到組員帳號下, 無需進行任何設定, 但是在 Replit 則必須在每次登入 Replit 的階段重新對 /home/runner/.ssh 中的 private key 以及 config 檔案進行設定.</p>
+<p>在 Codespaces 相較於 Replit 的好處, Github Classroom 對分組倉儲所設定的管理權限, 可以直接套用到組員帳號下, 無需進行任何設定, 但是在 Replit 免費帳號環境下, 則必須在每次登入 Replit 的階段重新對 /home/runner/.ssh 中的 private key 以及 config 檔案進行設定.</p>
 <p>因此, 在運用 Github Pages 與 Github Classroom 的情況下, 使用 Codespaces 雲端環境較為便捷.</p>
-<p>但是, 能夠在 Replit 觀測靜態網站即時內容的功能, 目前在 Codespaces 平台上無法套用.</p><h1>platform</h1>
+<p>但是, 必須注意 Github Codespaces 提供的<a href="https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces">免費帳號額度</a>:</p>
+<ol>
+<li>每月儲存容量為 15GB, Core hours 120 小時</li>
+<li>由於最小額度為 2-core, 因此若平均以每月 30 算, 每天可用的運算額度為 2 小時(?)</li>
+</ol><h1>platform</h1>
 <p>鋼球平衡台的零組件繪圖分別由:</p>
 <p>41123199 學員繪製 parts: <a href="https://mdecd2024.github.io/test-ag1/41123199/parts">https://mdecd2024.github.io/test-ag1/41123199/parts</a> </p>
 <p>這裡也可以直接引用 41123199 學員 cd2024 倉儲中的圖片或其他檔案資料</p>
@@ -73,7 +80,7 @@ os.system("chmod og-rwx /home/runner/.ssh/id_rsa")</pre>
 <p><span style="background-color: #ccffcc;">80</span> - 由 init.py 中 static_port 所決定的連結字串, 一般不使用 80, 只有在 Replit 中為了與動態網站共用 port, 才特別設為 80.</p>
 <p></p><h1>Replit</h1>
 <p><a href="https://replit.com">https://replit.com</a></p>
-<p>利用 init_replit 指令安裝所需 Python 模組<br/><br/>chmod u+x init_replit<br/><br/>./init_replit</p>
+<p>利用 init_replit 指令安裝所需 Python 模組<br/><br/>chmod u+x init_replit<br/><br>./init_replit</br></p>
 <p dir="auto">On Replit:</p>
 <p dir="auto">.replit: python3 main.py</p>
 <p dir="auto">chmod u+x cms init_replit</p>
