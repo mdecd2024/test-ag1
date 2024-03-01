@@ -101,6 +101,7 @@ os.system("chmod og-rwx /home/runner/.ssh/id_rsa")</pre>
 </ol>
 <p>接下來要測試的項目是, 能否在 Codespaces 上執行 CoppeliaSim 控制用的 ZeorMQ Python API 程式, 用來操控特定電腦伺服器上的模擬場景. 目前測試結果是: 不行, 有 server port forwarding, 但是並無法將封包往外送!</p><h1>Edit_on_Gitpod</h1>
 <p>從 <a href="https://github.com/mdecd2024/test-ag1">https://github.com/mdecd2024/test-ag1</a> import 倉儲, 只要設定 .ssh 目錄中的 keys 與 config, 並且修改 .git 中的 url 就可以取得 push 權限.</p>
+<p>Gitpod Dashboard 位於 <a href="https://gitpod.io">https://gitpod.io</a> 可以關閉或開啟 workspace</p>
 <p>/workspace/test-g1 為 import github 倉儲之後的路徑</p>
 <p>/home/gitpod/.ssh 為 id_rsa, id_rsa.pub 與 config 存放位置</p>
 <p>cd 會進入 /home/gitpod</p>
