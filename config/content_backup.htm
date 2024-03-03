@@ -46,7 +46,17 @@
 <p><a href="https://github.com/m1guelpf/auto-subtitle">https://github.com/m1guelpf/auto-subtitle</a> </p>
 <p>每一個學員都要學會如何利用 OBS 錄製電腦操作影片以及即時線上串流</p>
 <p>利用 Handbrake 轉換影片檔案格式</p>
-<p>並且利用 auto-subtitle 在影片中配上字幕</p><h1>Edit_on_Replit</h1>
+<p>並且利用 auto-subtitle 在影片中配上字幕</p><h1>LaTeX</h1>
+<p><a href="/downloads/report.txt">report.txt</a></p>
+<p>若將 report.txt 放入倉儲, 且其他章節上傳至 downloads</p>
+<p><a href="/downloads/abstract.txt">abstract.txt</a></p>
+<p><a href="/downloads/introduction.txt">introduction.txt</a></p>
+<p><a href="/downloads/literature_review.txt">literature_review.txt</a></p>
+<p><a href="/downloads/part_and_assembly.txt">part_and_assembly.txt</a></p>
+<p><a href="/downloads/discussion.txt">discussion.txt</a></p>
+<p><a href="/downloads/conclusion.txt">conclusion.txt</a></p>
+<p><a href="/downloads/bibliography.txt">bibliography.txt</a></p>
+<p>之後, 在可攜系統利用 MikTeX 執行兩次 xelatex report.txt, 可以編譯得到 <a href="/downloads/report.pdf">report.pdf</a></p><h1>Edit_on_Replit</h1>
 <p>針對擁有管理授權的 Github Classroom 倉儲, 如何利用 Replit 進行維護.</p>
 <p>設法在 Replit 帳號下, 利用 ssh-keygen 指令建立 .ssh 目錄下的 id_rsa 與 id_rsa.pub, 將 id_rsa.pub 送到 Github 帳號後, 此 id_rsa 私鑰即具有將此 Replit 帳號推向 Github 的權限.</p>
 <p>只是使用者必須設法利用 vi 自行建立 .ssh/config, 並且將 config 中所宣告的 Host 名稱, 以 SSH 協定格式, 修改倉儲 .git 目錄中的 config 連線設定.</p>
@@ -101,6 +111,7 @@ os.system("chmod og-rwx /home/runner/.ssh/id_rsa")</pre>
 </ol>
 <p>接下來要測試的項目是, 能否在 Codespaces 上執行 CoppeliaSim 控制用的 ZeorMQ Python API 程式, 用來操控特定電腦伺服器上的模擬場景. 目前測試結果是: 不行, 有 server port forwarding, 但是並無法將封包往外送!</p><h1>Edit_on_Gitpod</h1>
 <p>從 <a href="https://github.com/mdecd2024/test-ag1">https://github.com/mdecd2024/test-ag1</a> import 倉儲, 只要設定 .ssh 目錄中的 keys 與 config, 並且修改 .git 中的 url 就可以取得 push 權限.</p>
+<p>Gitpod Dashboard 位於 <a href="https://gitpod.io">https://gitpod.io</a> 可以關閉或開啟 workspace</p>
 <p>/workspace/test-g1 為 import github 倉儲之後的路徑</p>
 <p>/home/gitpod/.ssh 為 id_rsa, id_rsa.pub 與 config 存放位置</p>
 <p>cd 會進入 /home/gitpod</p>

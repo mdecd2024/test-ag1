@@ -9,10 +9,12 @@
 \setCJKmainfont{標楷體}
 \newfontfamily\sectionef{Times New Roman}%設定英文字體
 
-\title{ODOO PLM 在協同產品設計上的應用 \\ \large{- 以鋼球平衡台系統設計為例}}
-\author{作者名1}
-\author{作者名2}
-\author{作者名3}
+\title{ {\huge 國立虎尾科技大學 \\[0.2cm] 機械設計工程系 \\[0.2cm] 協同產品設計實習期中報告} \\[1cm] 
+ODOO PLM 在協同產品設計上的應用 \\[0.2cm] 
+- 以鋼球平衡台系統設計為例}
+\author{作者名1 \\ 
+        作者名2 \\ 
+        作者名3}
 \date{\today}
 
 \begin{document}
