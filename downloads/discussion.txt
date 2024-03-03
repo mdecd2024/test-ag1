@@ -1,0 +1,10 @@
+\chapter{結果與討論}
+這是結果與討論部分的內容。這裡依然加入一些假文：
+\lipsum[4]
+
+這是《白鯨記》中的一段內容：
+\begin{quote}
+Call me Ishmael. Some years ago -- never mind how long precisely -- having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.
+\end{quote}
+
+在這段中，我們提到了一個重要名詞\cite{melville1851}，即《白鯨記》。同時，這裡也是我們引入參考文獻的地方。

@@ -1,0 +1,4 @@
+% 參考資料部分
+\begin{thebibliography}{99}
+\bibitem{melville1851} Herman Melville, \emph{Moby-Dick}, 1851.
+\end{thebibliography}

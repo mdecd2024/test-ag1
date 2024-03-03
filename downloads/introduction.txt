@@ -1,0 +1,12 @@
+% 第一章內容
+\chapter{引言}
+這是引言部分的內容。這裡我們加入一些假文：
+\lipsum[1]
+
+% 引用第一張圖片
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.5\linewidth]{images/figure1.png}
+  \caption{這是第一張圖片}
+  \label{fig:figure1}
+\end{figure}
