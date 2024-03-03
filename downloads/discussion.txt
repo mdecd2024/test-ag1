@@ -8,3 +8,50 @@ Call me Ishmael. Some years ago -- never mind how long precisely -- having littl
 \end{quote}
 
 在這段中，我們提到了一個重要名詞\cite{melville1851}，即《白鯨記》。同時，這裡也是我們引入參考文獻的地方。
+
+\section*{牛頓三個運動定律}
+
+\subsection*{第一定律（慣性定律）}
+
+當一個物體不受外力作用時，它將保持靜止或匀速直線運動。
+
+\begin{equation}\label{eq:first-law}
+    \sum \mathbf{F} = 0 \quad \text{或} \quad \mathbf{F} = 0
+\end{equation}
+
+\subsection*{第二定律（運動定律）}
+
+當一個物體受到外力作用時，它的加速度與所受力成正比，與物體的質量成反比，且方向與力相同。
+
+\begin{equation}\label{eq:second-law}
+    \mathbf{F} = m \mathbf{a}
+\end{equation}
+
+\subsection*{第三定律（作用-反作用定律）}
+
+對於每一個作用在物體上的力，都存在一個與之大小相等、方向相反的反作用力。
+
+\begin{equation}\label{eq:third-law}
+    \mathbf{F}_{\text{作用}} = -\mathbf{F}_{\text{反作用}}
+\end{equation}
+
+% 創建章節標題
+\section*{牛頓三個運動定律與mass-spring-damper系統推導}
+
+% 說明段落
+在物理學中，mass-spring-damper系統是一種常見的物理系統，用來描述質量、彈簧和阻尼器之間的運動關係。系統的運動方程可以通過牛頓第二定律得出。
+
+% 使用align*環境來排版數學公式
+\begin{align}\label{eq:mass-spring-damper}
+    m \frac{d^2x}{dt^2} &= -kx - b \frac{dx}{dt}
+\end{align}
+
+這是一個二階線性常微分方程（ODE），描述了物體受到的外力（彈簧力和阻尼力）對其運動的影響。
+
+我們考慮一個一維運動的系統，其運動方程如下：
+\begin{equation}\label{eq:newton-second-law}
+    F = ma
+\end{equation}
+其中，$F$ 是作用力，$m$ 是質量，$a$ 是加速度。
+
+根據牛頓第二定律（\ref{eq:newton-second-law}式），質量為$m$的物體所受的淨外力等於質量乘以加速度。
