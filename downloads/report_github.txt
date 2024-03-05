@@ -30,7 +30,7 @@ ODOO PLM 在協同產品設計上的應用 \\[0.2cm]
 \maketitle
 
 % 建立摘要頁面
-\input{./../41123199@6ca1236/downloads/abstract.txt}
+\input{abstract.txt}
 
 \newpage
 
