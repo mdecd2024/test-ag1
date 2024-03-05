@@ -16,7 +16,7 @@ Call me Ishmael. Some years ago -- never mind how long precisely -- having littl
 當一個物體不受外力作用時，它將保持靜止或匀速直線運動。
 
 \begin{equation}\label{eq:first-law}
-    \mathbf{F} = 0 \quad \text{或} \quad \mathbf{F} = 0
+    \sum \mathbf{F} = 0 \quad \text{或} \quad \mathbf{F} = 0
 \end{equation}
 
 \subsection*{第二定律（運動定律）}
@@ -32,7 +32,7 @@ Call me Ishmael. Some years ago -- never mind how long precisely -- having littl
 對於每一個作用在物體上的力，都存在一個與之大小相等、方向相反的反作用力。
 
 \begin{equation}\label{eq:third-law}
-    \mathbf{F}_{\text{作用}} = -\mathbf{F}_{\text{反作用}}
+    \mathbf{F}_{\text{action}} = -\mathbf{F}_{\text{reaction}}
 \end{equation}
 
 % 創建章節標題
