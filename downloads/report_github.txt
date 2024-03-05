@@ -30,7 +30,7 @@ ODOO PLM 在協同產品設計上的應用 \\[0.2cm]
 \maketitle
 
 % 建立摘要頁面
-\input{./41123199/downloads/abstract.txt}
+\input{./../41123199/downloads/abstract.txt}
 
 \newpage
 
@@ -40,12 +40,12 @@ ODOO PLM 在協同產品設計上的應用 \\[0.2cm]
 % 建立圖表目錄
 \listoffigures
 % 是否該先定義 cite
-\input{downloads/bibliography.txt}
+\input{bibliography.txt}
 
-\input{downloads/introduction.txt}
-\input{downloads/literature_review.txt}
-\input{downloads/part_and_assembly.txt}
-\input{downloads/discussion.txt}
-\input{downloads/conclusion.txt}
+\input{introduction.txt}
+\input{literature_review.txt}
+\input{part_and_assembly.txt}
+\input{discussion.txt}
+\input{conclusion.txt}
 
 \end{document}
