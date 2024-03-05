@@ -4,11 +4,16 @@
 \usepackage{tocbibind}
 \usepackage{hyperref}
 \usepackage{lipsum} % 添加假文套件以生成範例內容
+% 導入 amsmath 以便輸入數學方程式
+\usepackage{amsmath}
 
 % 在 Windows 可以使用系統所安裝的字型
 %\setCJKmainfont{標楷體} %設定中文字體
-
 %\newfontfamily\sectionef{Times New Roman}%設定英文字體
+%\setCJKmainfont{標楷體} %設定中文字體
+\setCJKmainfont{MoeStandardKai.ttf}
+%\newfontfamily\sectionef{Times New Roman}%設定英文字體
+\newfontfamily\sectionef{Nimbus Roman}
 
 \title{ {\huge 國立虎尾科技大學 \\[0.2cm] 機械設計工程系 \\[0.2cm] 協同產品設計實習期中報告} \\[1cm] 
 ODOO PLM 在協同產品設計上的應用 \\[0.2cm] 
@@ -19,6 +24,7 @@ ODOO PLM 在協同產品設計上的應用 \\[0.2cm]
 \date{\today}
 
 \begin{document}
+\sectionef %設定英文字體啟用
 
 % 建立報告標題頁
 \maketitle
