@@ -19,7 +19,6 @@ ODOO PLM 在協同產品設計上的應用 \\[0.2cm]
 \date{\today}
 
 \begin{document}
-\sectionef %設定英文字體啟用
 
 % 建立報告標題頁
 \maketitle
