@@ -2,10 +2,10 @@
 這是有關產品設計零組件繪圖部分的內容。這裡我們還是加入一些假文：
 \lipsum[3]
 
-% 引用第三張圖片
+% 引用 figure1.png 圖片
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.5\linewidth]{images/figure3.png}
-  \caption{這是第三張圖片}
-  \label{fig:figure3}
+  \includegraphics[width=0.5\linewidth]{images/figure1.png}
+  \caption{這是 figure1 圖片}
+  \label{fig:figure1}
 \end{figure}

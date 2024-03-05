@@ -16,7 +16,7 @@ Call me Ishmael. Some years ago -- never mind how long precisely -- having littl
 當一個物體不受外力作用時，它將保持靜止或匀速直線運動。
 
 \begin{equation}\label{eq:first-law}
-    \sum \mathbf{F} = 0 \quad \text{或} \quad \mathbf{F} = 0
+    \mathbf{F} = 0 \quad \text{或} \quad \mathbf{F} = 0
 \end{equation}
 
 \subsection*{第二定律（運動定律）}
