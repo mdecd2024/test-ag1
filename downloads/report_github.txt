@@ -35,12 +35,13 @@ ODOO PLM 在協同產品設計上的應用 \\[0.2cm]
 
 % 建立圖表目錄
 \listoffigures
+% 是否該先定義 cite
+\input{downloads/bibliography.txt}
 
 \input{downloads/introduction.txt}
 \input{downloads/literature_review.txt}
 \input{downloads/part_and_assembly.txt}
 \input{downloads/discussion.txt}
 \input{downloads/conclusion.txt}
-\input{downloads/bibliography.txt}
 
 \end{document}
