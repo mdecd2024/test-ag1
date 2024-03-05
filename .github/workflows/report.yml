@@ -16,15 +16,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.1.1
+
+      # Add this step to fetch submodules
+      - name: Fetch submodules
+        run: git submodule update --init --recursive
+
       - name: Install texlive and related fonts
         run:
           sudo apt install -y texlive texlive-xetex texlive-lang-chinese gsfonts fonts-moe-standard-kai ttf-mscorefonts-installer librsvg2-bin texlive-fonts-extra 
+
       - name: Test LaTeX
-        working-directory: ./
+        working-directory: ./downloads
         run: |
-          xelatex ./downloads/report_github.txt
-          xelatex ./downloads/report_github.txt
-          xelatex ./downloads/report_github.txt
+          xelatex report_github.txt
+          xelatex report_github.txt
+          xelatex report_github.txt
 
       - name: Bump version and push tag
         id: tag_version
@@ -50,6 +56,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} 
-          asset_path: ./report_github.pdf
+          asset_path: ./downloads/report_github.pdf
           asset_name: report_github.pdf
           asset_content_type: pdf
