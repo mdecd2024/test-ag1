@@ -5,7 +5,7 @@
 % 引用 figure1.png 圖片
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.5\linewidth]{images/figure1.png}
+  \includegraphics[width=0.5\linewidth]{./../images/figure1.png}
   \caption{這是 figure1 圖片}
   \label{fig:figure1}
 \end{figure}

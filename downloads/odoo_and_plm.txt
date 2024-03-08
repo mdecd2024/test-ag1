@@ -5,7 +5,7 @@
 % 引用 odoo_plm.png 圖片檔案
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=1.2\linewidth]{images/odoo_plm.png}
+  \includegraphics[width=1.2\linewidth]{./../images/odoo_plm.png}
   \caption{Odoo PLM 套件}
   \label{fig:odoo_plm}
 \end{figure}

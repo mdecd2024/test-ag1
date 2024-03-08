@@ -1,3 +1,6 @@
 [submodule "41123199"]
 	path = 41123199
 	url = https://github.com/scrum-2/cd2024.git
+[submodule "41123198"]
+	path = 41123198
+	url = https://github.com/mdecycu/sombody.git
