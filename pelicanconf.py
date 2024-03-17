@@ -9,7 +9,7 @@ USE_FOLDER_AS_CATEGORY = False
 
 #PATH = 'markdown'
 
-# 開始將組員的個別網誌目錄納入分組倉儲中
+# 開始將組員的個別網誌目錄納入分組倉儲中 and skip copying .md file under pages directory
 import os
 import shutil
 
@@ -35,9 +35,11 @@ for directory in input_directories:
     for root, _, files in os.walk(directory):
         for file in files:
             if file.endswith('.md'):
-                source_file = os.path.join(root, file)
-                destination_file = os.path.join(combined_directory, file)
-                shutil.copy(source_file, destination_file)
+                # Check if the file is not under the "pages" subdirectory
+                if "pages" not in root.split(os.path.sep):
+                    source_file = os.path.join(root, file)
+                    destination_file = os.path.join(combined_directory, file)
+                    shutil.copy(source_file, destination_file)
 
 # Get the paths of the combined directories
 combined_paths = os.path.abspath(combined_directory)

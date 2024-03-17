@@ -5,98 +5,77 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2024-03-16T23:56:17-00:00</lastmod>
+<lastmod>2024-03-17T03:12:02-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2024-03-16T23:56:17-00:00</lastmod>
+<lastmod>2024-03-17T03:12:02-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2024-03-16T23:56:17-00:00</lastmod>
+<lastmod>2024-03-17T03:12:02-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2024-03-16T23:56:17-00:00</lastmod>
+<lastmod>2024-03-17T03:12:02-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./about.html</loc>
-<lastmod>2024-03-16T23:56:17+08:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>./scrum2-2024-Spring-w1-blog-tutorial.html</loc>
-<lastmod>2024-03-16T23:56:17+08:00</lastmod>
+<lastmod>2024-03-17T03:12:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./scrum2_cd2024_2024-Spring-w1-blog-tutorial.html</loc>
-<lastmod>2024-03-16T23:56:17+08:00</lastmod>
+<lastmod>2024-03-17T03:12:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./category/misc.html</loc>
-<lastmod>2024-03-16T23:56:17+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>./category/scrum2.html</loc>
-<lastmod>2024-03-16T23:56:17+08:06</lastmod>
+<lastmod>2024-03-17T03:12:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tag/wang-zhi-bian-xie.html</loc>
-<lastmod>2024-03-16T23:56:17+08:06</lastmod>
+<lastmod>2024-03-17T03:12:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tag/combined_directory.html</loc>
-<lastmod>2024-03-16T23:56:17+08:06</lastmod>
+<lastmod>2024-03-17T03:12:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tag/w1.html</loc>
-<lastmod>2024-03-16T23:56:17+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>./author/kmol.html</loc>
-<lastmod>2024-03-16T23:56:17+08:06</lastmod>
+<lastmod>2024-03-17T03:12:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./author/scrum2.html</loc>
-<lastmod>2024-03-16T23:56:17+08:06</lastmod>
+<lastmod>2024-03-17T03:12:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
